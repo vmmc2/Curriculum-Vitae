@@ -1,0 +1,322 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Deedy - One Page Two Column Resume
+% LaTeX Template
+% Version 1.1 (30/4/2014)
+%
+% Original author:
+% Debarghya Das (http://debarghyadas.com)
+%
+% Original repository:
+% https://github.com/deedydas/Deedy-Resume
+%
+% IMPORTANT: THIS TEMPLATE NEEDS TO BE COMPILED WITH XeLaTeX
+%
+% This template uses several fonts not included with Windows/Linux by
+% default. If you get compilation errors saying a font is missing, find the line
+% on which the font is used and either change it to a font included with your
+% operating system or comment the line out to use the default font.
+% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% 
+% TODO:
+% 1. Integrate biber/bibtex for article citation under publications.
+% 2. Figure out a smoother way for the document to flow onto the next page.
+% 3. Add styling information for a "Projects/Hacks" section.
+% 4. Add location/address information
+% 5. Merge OpenFont and MacFonts as a single sty with options.
+% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% CHANGELOG:
+% v1.1:
+% 1. Fixed several compilation bugs with \renewcommand
+% 2. Got Open-source fonts (Windows/Linux support)
+% 3. Added Last Updated
+% 4. Move Title styling into .sty
+% 5. Commented .sty file.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% Known Issues:
+% 1. Overflows onto second page if any column's contents are more than the
+% vertical limit
+% 2. Hacky space on the first bullet point on the second column.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\documentclass[]{deedy-resume-openfont}
+
+
+\begin{document}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     LAST UPDATED DATE
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     TITLE NAME
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\namesection{Victor Miguel de Morais}{ Costa}
+{\urlstyle{same}\href{mailto:vmmc2@cin.ufpe.br}{vmmc2@cin.ufpe.br} | +55 81 995272379}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     COLUMN ONE
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{minipage}[t]{0.33\textwidth} 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     EDUCATION
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Education} 
+
+\subsection{UFPE - Federal University \newline of Pernambuco}
+\descript{B.Sc. in Computer Engineering}
+\location{Feb. 2018 - Dec. 2022 (expected)}
+\vspace{1mm} %5mm vertical space
+
+\descript{Relevant Coursework}
+\textbullet{}\location{Algorithms and Data Structures}
+\textbullet{}\location{Hardware Infrastructure}
+%\textbullet{}\location{Data Science}
+\vspace{3mm} %5mm vertical space
+
+% \vspace{3mm} %5mm vertical space
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     LINKS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%\section{Links} 
+%Github:// \href{https://github.com/deedydas}{\custombold{deedydas}} \\
+%LinkedIn://  \href{https://www.linkedin.com/in/ladsongomes}{\custombold{ladsongomes}} \\
+%\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     COURSEWORK
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%\section{Coursework}
+%\subsection{Graduate}
+%Advanced Machine Learning \\
+%Open Source Software Engineering \\
+%Advanced Interactive Graphics \\
+%Compilers + Practicum \\
+%Cloud Computing \\
+%\sectionsep
+
+%\subsection{Undergraduate}
+%Information Retrieval \\
+%Operating Systems \\
+%Artificial Intelligence + Practicum \\
+%Functional Programming \\
+%Computer Graphics + Practicum \\
+%{\footnotesize \textit{\textbf{(Research Asst. \& Teaching Asst) }}} \\
+%Unix Tools and Scripting \\
+%\sectionsep
+
+\section{Links}
+%\location{Personal page: \href{https://thiagoaugustosm.com}{thiagoaugustosm.com}}
+\location{Github: \href{https://github.com/vmmc2}{/vmmc2}}
+%\location{LinkedIn: \href{https://www.linkedin.com/in/hugo97s/}{/hugo97s}}
+% \sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     SKILLS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Skills}
+\vspace{2mm} %5mm vertical space
+
+%\subsection{Core}
+%Public Speaking \textbullet{} Team Management\\
+%IoT \textbullet{} Mobile and Web devlopment 
+%\vspace{3mm} %5mm vertical space
+
+\subsection{Programming}
+\location{Over 1.5 years:}
+ C \textbullet{} C++ \textbullet{} Python\\
+\vspace{1mm}
+\location{1 year:}
+Verilog \textbullet{} SystemVerilog \textbullet{} Assembly x86
+\vspace{3mm} %5mm vertical space
+
+%\subsection{Embedded Prototyping \\ \& Tools}
+%Arduino \textbullet{} ESP8266 \\
+%ESP32 \textbullet{} LoRa
+%\vspace{3mm} %5mm vertical space
+
+\subsection{Languages}
+\location{Portuguese (Native)}
+\location{English (Advanced)}
+\sectionsep
+
+% \section{WorkShops}
+% \vspace{2mm} %5mm vertical space
+% \descript{How to create an amazing experience using P5.js}
+% \location{JSDay Recife}
+% \location{Dec. 2018 | Recife - PE, BR}
+% \textbullet{} Presented about P5.js' features and advantages in developing graphic, audio and text interaction on browser.
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     COLUMN TWO
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\end{minipage} 
+\hfill
+\begin{minipage}[t]{0.66\textwidth} 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     EXPERIENCE
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Experience}
+
+\runsubsection{PETLAB}
+\descript{| Undergraduate Researcher }
+\location{Aug. 2019 – Present | Recife - PE, BR}
+\vspace{\topsep} % Hacky fix for awkward extra vertical space
+\begin{tightemize}
+\item PETLAB is a program developed in a partnership between PET(Programa de Educação Tutorial) and
+ three research and development laboratories present at UFPE: Voxar Labs, LIKA and SPG. In this program, I spent a month in each of these laboratories developing researches and projects, oriented by professionals of each laboratory.
+\item Relevant technologies used: Python
+\end{tightemize}
+% \vspace{\topsep} % Hacky fix for awkward extra vertical space
+
+\runsubsection{Monitoring of Vector and Linear Algebra - UFPE}
+\descript{| Assistant Teacher }
+\location{Aug. 2018 – Aug. 2019 | Recife - PE, BR}
+\begin{tightemize}
+\item Worked as an assistant teacher of the discipline known as Vector and Linear Algebra during one year.
+During this time, I taught classes on subjects within the scope of the discipline such as: matrices, determinants, base changes, vector space and others.
+\item I also made lists of exercises for the students of this discipline so they could prepare themselves better for the exams.
+\item I prepared a series of mini tests that were used as a part of the final grade of the students in this discipline.
+\end{tightemize}
+
+% \runsubsection{SENAI - Federal Institute of Education, Sciences and Technology of Pernambuco}
+% \descript{| Technician Researcher }
+% \location{Feb. 2016 – Dec. 2016 | Recife - PE, BR}
+% \begin{tightemize}
+% \item Worked at the RailBee Research Group developing the RailBee System, a Telemetric System for Strategic Monitoring of Urban Trains.
+% \item Developed SOFIA, a system for managing, processing and analyzing real-time data of RailBee System.
+% \item Managed the technology transfer of RailBee System from IFPE to CBTU (Brazilian Company of Urban Trains).
+% \end{tightemize}
+
+
+
+
+%\sectionsep
+% \runsubsection{\href{http://ifs.edu.br/}{Instituto Federal de Sergipe - IFS}}
+% \descript{| Network Admin Intern}
+% \location{Jan. 2013 - Feb. 2015 | Aracaju - SE, BR}
+% %\vspace{\topsep} % Hacky fix for awkward extra vertical space
+% \begin{tightemize}
+% \item Had hands-on learning with the maintenance and management of Linux, BSD and Windows systems, both on bare metal and virtualized through ESXi and Hyper-V.
+% \item Automated tasks with Python and shell scripts in a production environment. 
+% \item Kept track of the internal network's performance and stability through Zabbix.
+% \item Managed to detect network downtimes faster while also decreasing their occurrences, increasing overall campus productivity.
+% \end{tightemize}
+
+%\sectionsep
+
+\section{Projects}
+
+\runsubsection{Competitive Programming}
+\descript{| Developer}
+\location{Aug. 2018 - Present | Recife - PE, BR}
+\begin{tightemize}
+\item {Competitive Programming is a repository that I made which contains solutions for several problems about algorithms and data structures from different online judges such as: Codeforces, UVa and more. It was made for educational purpose and to help other students in order to solve a specific problem.}
+\item {Relevant technologies used: C; C++; Python}
+\end{tightemize}
+
+\runsubsection{Nemesis}
+\descript{| Developer}
+\location{Jul. 2019 - Aug. 2019 | Recife - PE, BR}
+\begin{tightemize}
+\item {Nemesis is a cache simulator of 1024 words that I made using Python. It can simulate 16 different types of cache and supports both write access and read access. It was mainly developed using the RISC-V as a base.}
+\item {Relevant technologies used: Python.}
+\end{tightemize}
+
+\runsubsection{Hangman Bootloader}
+\descript{| Developer}
+\location{Mar. 2019 - Apr. 2019| Recife - PE, BR}
+\begin{tightemize}
+\item {The Hangman Bootloader is as its name suggests a bootloader that can be run in any machine that has Linux as its OS. This bootloader was made using Assembly x86 and contains a hangman game that can be played while the user waits for the system to get initialized.}
+\item {Relevant technologies used: Assembly x86; MakeFile.}
+\end{tightemize}
+
+\runsubsection{Gasolina: Greve Infinita}
+\descript{| Developer/Planner }
+\location{May. 2018 - Jul.2018 | Recife - PE, BR}
+\begin{tightemize}
+\item {Gasolina: Greve Infinita is a Battle-Royale game that can be played by at most 4 players in a local server. The project was made as part of the Introduction to Programming Class at UFPE. After the development, the game was tested by freshman students.}
+\item {Responsible for the game art and for the development of the connection server-client.}
+\item {Relevant technologies used: C; Socket; Allegro5}
+\item {More detailed information can be found at: https://github.com/vmmc2/Gasolina-Greve-Infinita}
+\end{tightemize}
+%\sectionsep
+
+%\section{Workshops}
+%\vspace{0.5mm} %5mm vertical space
+%\descript{Chatbots | Building your first chatbot with dialogflow}
+%\location{Campus Party Natal}
+%\location{April 2018 | Natal - RN, BR}
+%\textbullet{} Presentation of theoretical contents about Chatbots, tips of good %practices when starting to plan
+%a ChatBot, Overview of the Google ChatBots platform: DialogFlow; and prototyping the ChatBot by the participants.
+
+%\vspace{0.5mm} %5mm vertical space
+%\descript{IoT introduction with NodeMcu}
+%\location{Campus Party Bahia}
+%\location{May 2018 | Salvador - BA, BR}
+%\textbullet{} Presented and introduced the participants to development with NodeMcu architecture using ESP8266, a compact and versatile IoT platform.
+% \descript{Chatbots | Building your first chatbot with dialogflow}
+% \location{Campus Party Natal | Campus Party Bahia}
+% \location{Dec. 2018 | Recife - PE, BR}
+% \textbullet{} Presented about P5.js' features and advantages in developing graphic, audio and text interaction on browser.
+
+
+%\sectionsep
+
+% \runsubsection{Ocular sensor for computers}
+% \descript{| Co-Founder | Developer }
+
+% \location{Jun. 2014 - Jul. 2015 | Aracaju - SE, BR}
+% \begin{tightemize}
+% \item {Creation of a low cost optical sensor that could capture and translate the movements made by the pupils into mouse movements.}
+% \item {Developed both the firmware and desktop software using C++ and OpenCV.}
+% \item {Eye tracking hardware made with an Arduino Uno attached to a PSEye camera.}
+% \item {With it, people with disabilities regarding the superior limbs were able to use a computer without the need for an expensive device.}
+% \end{tightemize}
+
+%\sectionsep
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     SOCIETIES
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%\section{Societies} 
+
+%\begin{tabular}{rll}
+%2014 	& top 12\%ile    & Tau Beta Pi Engineering Honor Society\\
+%2014   & National   & The Global Leadership and Education Forum (tGELF)\\
+%2012   &  National  & Golden Key International Honor Society\\
+%2012   &  National   & National Society of Collegiate Scholars\\
+%\end{tabular}
+%\sectionsep
+
+\end{minipage} 
+\end{document}
